@@ -18,11 +18,6 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
-            name: "AnkitLibrary",
-            dependencies: []),
-        .testTarget(
-            name: "AnkitLibraryTests",
-            dependencies: ["AnkitLibrary"]),
+        .binaryTarget(name: "AnkitFramework", url: "https://ufile.io/j3stxghx", checksum: "669624f0edc8339265721e49a9d63ca3ea671b781057b12ee11befb9b8e2fece")
     ]
 )
